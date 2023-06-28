@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\Quaki\Downloads\MinHook-PassGrab-main\MinHook-PassGrab-main\MinHoookDll\dllmain.cpp(42,49): warning C4244: '=': conversion from 'WCHAR' to 'char', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+  MinHoookDll.vcxproj -> C:\Users\Quaki\Downloads\MinHook-PassGrab-main\MinHook-PassGrab-main\x64\Debug\MinHoookDll.dll
