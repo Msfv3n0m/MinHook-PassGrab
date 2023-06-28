@@ -4,12 +4,7 @@ Based on https://shubakki.github.io/posts/2022/12/detecting-and-evading-sandboxi
 
 Simple minhook example via run-time dynamic linking for fun and learning
 
-## How to Build/Compile
-
-- Visual studio 2022 and its workload Desktop development with C++ are requiere
-- https://github.com/TsudaKageyu/minhook I recommend installing it via vcpkg
-
 ## Code structure
 
-- **MinHookClient** console win app that load the MinHoookDll
-- **MinHoookDll** dll that hooks NtDelayExecution on DLL_PROCESS_ATTACH
+- **MinHookClient** console win app that loads MinHoookDll, and attempts to change the `ao` user's password to a hardcoded value
+- **MinHoookDll** dll that hooks NetUserSetInfo on DLL_PROCESS_ATTACH such that when the function is called, it creates a message box with the password in addition to changing the user's password
