@@ -19,6 +19,5 @@ int main()
 	if (status != NERR_Success)
 		printf("error: %d\n", status);
 	printf("done\n");
-	//WinExec("cmd", NULL);
     return 0;
 }
